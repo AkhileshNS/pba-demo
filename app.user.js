@@ -9,7 +9,7 @@ const name = process.env.USER || "Akhilesh";
 const port = process.env.PORT || 3000;
 
 let blockchain = new Blockchain();
-let server = P2p.userServer({
+P2p.userServer({
   name, blockchain
 });
 

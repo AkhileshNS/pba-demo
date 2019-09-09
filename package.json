@@ -7,13 +7,35 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev-test": "node src/dev-test.js",
     "user": "nodemon app.user.js",
-    "approver": "nodemon app.approver.js"
+    "approver": "nodemon app.approver.js",
+    "users": "run-p user:Akhilesh user:Anirban user:Anirudh user:Aishwarya user:Anurag user:Raksha user:Disha user:Namitha user:Hamsa user:Dhanraj user:Abhishek user:Shreyas user:Gehna",
+    "approvers": "run-p approver:Kotak approver:Hdfc approver:Allahabad",
+
+    "user:Akhilesh": "cross-env PORT=3001 USER=\"Akhilesh\" npm run user",
+    "user:Anirban": "cross-env PORT=3002 USER=\"Anirban\" npm run user",
+    "user:Anirudh": "cross-env PORT=3003 USER=\"Anirudh\" npm run user",
+    "user:Aishwarya": "cross-env PORT=3004 USER=\"Aishwarya\" npm run user",
+    "user:Anurag": "cross-env PORT=3005 USER=\"Anurag\" npm run user",
+    "user:Raksha": "cross-env PORT=3006 USER=\"Raksha\" npm run user",
+    "user:Disha": "cross-env PORT=3007 USER=\"Disha\" npm run user",
+    "user:Namitha": "cross-env PORT=3008 USER=\"Namitha\" npm run user",
+    "user:Hamsa": "cross-env PORT=3009 USER=\"Hamsa\" npm run user",
+    "user:Dhanraj": "cross-env PORT=3010 USER=\"Dhanraj\" npm run user",
+    "user:Abhishek": "cross-env PORT=3011 USER=\"Abhishek\" npm run user",
+    "user:Shreyas": "cross-env PORT=3012 USER=\"Shreyas\" npm run user",
+    "user:Gehna": "cross-env PORT=3013 USER=\"Gehna\" npm run user",
+
+    "approver:Kotak": "cross-env APPROVER=\"Kotak Mahindra Bank\" npm run approver",
+    "approver:Hdfc": "cross-env APPROVER=\"HDFC Bank\" npm run approver",
+    "approver:Allahabad": "cross-env APPROVER=\"Allahabad Bank\" npm run approver"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.19.0"
+    "cross-env": "^5.2.1",
+    "nodemon": "^1.19.0",
+    "npm-run-all": "^4.1.5"
   },
   "dependencies": {
     "body-parser": "^1.19.0",

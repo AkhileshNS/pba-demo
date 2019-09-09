@@ -1,7 +1,7 @@
 {
   "name": "pba-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a barebones implementation of the Proof-by-Approval consensus protocol on a Blockchain in NodeJS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -29,8 +29,10 @@
     "approver:Hdfc": "cross-env APPROVER=\"HDFC Bank\" npm run approver",
     "approver:Allahabad": "cross-env APPROVER=\"Allahabad Bank\" npm run approver"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "javascript", "nodejs", "blockchain", "cryptography", "networking"
+  ],
+  "author": "Akhilesh NS",
   "license": "ISC",
   "devDependencies": {
     "cross-env": "^5.2.1",

@@ -2,7 +2,7 @@ const EC = require('elliptic').ec;
 const SHA256 = require('crypto-js/sha256');
 const jsonDB = require('./data');
 
-const ec = new EC('ed25519');
+const ec = new EC('secp256k1');
 
 const userSign = ({user, data}) => {
   let User = jsonDB.getUserPrivate(user.name);

@@ -10,7 +10,6 @@
     "approver": "nodemon app.approver.js",
     "users": "run-p user:Akhilesh user:Anirban user:Anirudh user:Aishwarya user:Anurag user:Raksha user:Disha user:Namitha user:Hamsa user:Dhanraj user:Abhishek user:Shreyas user:Gehna",
     "approvers": "run-p approver:Kotak approver:Hdfc approver:Allahabad",
-
     "user:Akhilesh": "cross-env PORT=3001 USER=\"Akhilesh\" npm run user",
     "user:Anirban": "cross-env PORT=3002 USER=\"Anirban\" npm run user",
     "user:Anirudh": "cross-env PORT=3003 USER=\"Anirudh\" npm run user",
@@ -24,13 +23,16 @@
     "user:Abhishek": "cross-env PORT=3011 USER=\"Abhishek\" npm run user",
     "user:Shreyas": "cross-env PORT=3012 USER=\"Shreyas\" npm run user",
     "user:Gehna": "cross-env PORT=3013 USER=\"Gehna\" npm run user",
-
     "approver:Kotak": "cross-env APPROVER=\"Kotak Mahindra Bank\" npm run approver",
     "approver:Hdfc": "cross-env APPROVER=\"HDFC Bank\" npm run approver",
     "approver:Allahabad": "cross-env APPROVER=\"Allahabad Bank\" npm run approver"
   },
   "keywords": [
-    "javascript", "nodejs", "blockchain", "cryptography", "networking"
+    "javascript",
+    "nodejs",
+    "blockchain",
+    "cryptography",
+    "networking"
   ],
   "author": "Akhilesh NS",
   "license": "ISC",
